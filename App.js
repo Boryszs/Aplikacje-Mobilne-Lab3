@@ -15,15 +15,6 @@ import {
 } from 'react-native'
 
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-
 export default class App extends Component {
   constructor(props) {
     super(props)
@@ -32,7 +23,7 @@ export default class App extends Component {
 
   onPress = () => {
     this.setState({
-      flag: this.state.flag===false ? this.state.flag=true:this.state.flag=false
+      flag: !this.state.flag
     })
   }
 
